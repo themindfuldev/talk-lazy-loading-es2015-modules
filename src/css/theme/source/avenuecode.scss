@@ -1,0 +1,127 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #222;
+
+$mainColor: #fff;
+$headingColor: #ddd;
+
+$mainFontSize: 38px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.slides {
+  section {
+    min-height: 100%;
+
+    img.logo {
+      max-height: 250px;
+      border: 0;
+    }
+
+    pre {
+      min-width: 800px;
+    }
+
+    img.avatar {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      border: 2px solid black;
+    }
+
+    ul.full {
+      width: 100%;
+    }
+
+    img.icon {
+      max-height: 250px;
+      max-width: 250px;
+      border: 0;
+      background: none;
+      position: absolute;
+      right: 0;
+      box-shadow: none;
+    }
+
+    em {
+      color: #f90 !important;
+      font-style: normal;
+    }
+
+    div.footer {
+      position: absolute;
+      width: 800px;
+      z-index: 999;
+      left: 0;
+      bottom: 20px;
+      color: #ddd;
+      height: 46px;
+      text-align: left;
+      margin-bottom: 20px;
+
+      * {
+        font-size: 24px;
+        text-align: left;
+      }
+
+      hr {
+        margin: 5px 0;
+      }
+    }
+
+    img.ac-logo {
+      position: absolute;
+      max-height: none;
+      max-width: none;
+      width: 153px;
+      height: 109px;
+      z-index: 999;
+      right: 0;
+      bottom: 10px;
+      margin: 0px;
+      background: none;
+      box-shadow: none;
+      border: 0;
+      margin-bottom: 20px;
+    }
+  }
+}

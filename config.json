@@ -1,0 +1,8 @@
+{
+  "title": "Lazy loading ES2015 modules in the browser",
+  "description": "Learn about loading code during page load time vs lazy loading, then how to load ES2015 modules both synchronously (during page load) and asynchronously (lazy-load) using System.js over Babel, as well as how to use JSPM to organize this process and resolve dependencies from NPM and GitHub.",
+  "author": "Tiago Garcia",
+  "email": "tgarcia@avenuecode.com",
+  "porfolio": "http://tiagorg.com",
+  "date": "Jun 18th, 2016"
+}
