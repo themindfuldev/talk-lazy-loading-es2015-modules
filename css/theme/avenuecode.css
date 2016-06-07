@@ -340,5 +340,11 @@ body {
     box-shadow: none;
     border: 0;
     margin-bottom: 20px; }
+  .slides section .icon-success {
+    color: #5cb85c; }
+  .slides section .icon-warning {
+    color: #f0ad4e; }
+  .slides section .icon-danger {
+    color: #d9534f; }
 
 /*# sourceMappingURL=avenuecode.css.map */
