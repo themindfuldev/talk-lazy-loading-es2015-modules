@@ -4653,7 +4653,7 @@ Reveal.addEventListener('ready', function() {
     el.innerHTML += footer;
   });
 
-  var itemEls = document.querySelectorAll('div.slides section:not(:first-child) li, div.slides section:not(:first-child) > p');
+  var itemEls = document.querySelectorAll('div.slides section:not(:first-child) li, div.slides section:not(:first-child) > p, div.slides section:not(:first-child) pre');
   var items = Array.prototype.slice.call(itemEls);
   items.forEach(function(el) {
     el.classList.add('fragment');
