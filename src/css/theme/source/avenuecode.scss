@@ -52,34 +52,52 @@ section.has-light-background {
   section {
     min-height: 100%;
 
-    img.logo {
-      max-height: 250px;
+    img {
       border: 0;
+      max-height: 450px;
+
+      &.logo {
+        max-height: 250px;
+      }
+
+      &.avatar {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        border: 2px solid black;
+      }
+
+      &.icon {
+        max-height: 250px;
+        max-width: 250px;
+        background: none;
+        position: absolute;
+        right: 0;
+        box-shadow: none;
+      }
+
+      &.ac-logo {
+        position: absolute;
+        max-height: none;
+        max-width: none;
+        width: 153px;
+        height: 109px;
+        z-index: 999;
+        right: 0;
+        bottom: 10px;
+        margin: 0px;
+        background: none;
+        box-shadow: none;
+        margin-bottom: 20px;
+      }
     }
 
     pre {
       min-width: 800px;
     }
 
-    img.avatar {
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      border-radius: 10px;
-      border: 2px solid black;
-    }
-
     ul.full {
       width: 100%;
-    }
-
-    img.icon {
-      max-height: 250px;
-      max-width: 250px;
-      border: 0;
-      background: none;
-      position: absolute;
-      right: 0;
-      box-shadow: none;
     }
 
     em {
@@ -106,22 +124,6 @@ section.has-light-background {
       hr {
         margin: 5px 0;
       }
-    }
-
-    img.ac-logo {
-      position: absolute;
-      max-height: none;
-      max-width: none;
-      width: 153px;
-      height: 109px;
-      z-index: 999;
-      right: 0;
-      bottom: 10px;
-      margin: 0px;
-      background: none;
-      box-shadow: none;
-      border: 0;
-      margin-bottom: 20px;
     }
 
     .icon-success {

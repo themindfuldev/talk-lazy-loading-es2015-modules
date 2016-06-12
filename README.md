@@ -16,40 +16,46 @@ Jun 18th, 2016
 
 ---
 
-## Tiago Garcia
+# Tiago Garcia
 
 <img src="http://www.gravatar.com/avatar/5cac784a074b86d771fe768274f6860c?s=250" class="avatar">
 
 - Tech Manager at [Avenue Code](http://www.avenuecode.com)
 - Tech Lead at [Macys.com](http://www.macys.com)
 - *[tgarcia@avenuecode.com](mailto:tgarcia@avenuecode.com)*
-- *[http://tiagorg.com](http://tiagorg.com)*
+- *[tiagorg.com](http://tiagorg.com)*
 
 ----
 
-## Avenue Code
+# Avenue Code
 
 - Founded in 2008
 - Offices in San Francisco, São Paulo and Belo Horizonte
 - Primary verticals: Retail & Financial services
 - Partners with MuleSoft, Adobe, Chef, Oracle and AWS
 - Project Management, Business Analysis, Development, QA, DevOps, Coaching
-- Careers at *[https://www.avenuecode.com/careers](https://www.avenuecode.com/carreers)*
+- Careers at *[www.avenuecode.com/careers](https://www.avenuecode.com/carreers)*
 
 ---
 
-## Agenda
+# Agenda
 
-- SPA for performance?
-- Page load vs Lazy-loading
-- Do I need Lazy-loading?
-- How to Lazy load?
-- Lazy-loading in AMD
-- Lazy-loading in CommonJS
-- Lazy-loading in ES2015
-- ES2015 Module Loader
-- System.js
-- JSPM
+- *Part I: JavaScript Lazy-loading for dummies*
+  - SPA for performance?
+  - Lazy-loading 101
+  - Do I need Lazy-loading?
+  - How to Lazy load?
+- *Part II: Blazing loading*
+  - Lazy-loading in AMD
+  - Lazy-loading in CommonJS
+  - Lazy-loading in ES2015
+  - System.js
+
+---
+
+# Part I
+
+<img src="img/part-i.jpg" />
 
 ---
 
@@ -61,17 +67,17 @@ Jun 18th, 2016
 
 ## SPA for performance?
 
-- Moving you server-side app to SPA will improve the page performance:
+- Moving you server-side app to SPA would improve the page performance:
   - Requests returning JSON instead of HTML
   - Rendering a new view instead of a page reload
   - Routing and state management on the client-side
-- But that is not enough!
-  - Have you ever looked if you application is downloading more stuff that is being actually used?
-  - Such performance gains can fall short if you download all your stuff at once!
+- But that may not be enough!
+  - Have you ever checked if you application is downloading more stuff that is being actually used?
+  - All those performance gains can fall short if you download all your stuff at once!
 
 ---
 
-## Page load vs Lazy-loading
+## Lazy-loading 101
 
 - E-commerce A (server-side rendered) has 5 pages: home, browse, product, cart, checkout
   - Each page has *300 KB* HTML + *100 KB* JS
@@ -83,7 +89,7 @@ Jun 18th, 2016
 
 ----
 
-## Page load vs Lazy-loading
+## Lazy-loading 101
 
 - E-commerce B (SPA) has the same 5 pages
   - 1 actual page + 4 views
@@ -94,13 +100,17 @@ Jun 18th, 2016
       <li>*1.2 MB* total (vs *2 MB*) <i class="fa fa-check-circle icon-success" aria-hidden="true"></i></li>
       <li>80% just on home page: *1 MB* (vs *400 KB*) <i class="fa fa-times-circle icon-danger" aria-hidden="true"></i></li>
     </ul>
-  - If there is Lazy-loading:
+  - However, if you apply Lazy-loading:
     - *400 KB* on home page
     - *200 KB* each view after
 
 ----
 
-<img src="img/lazy-load-it.jpg" />
+## What is Lazy-loading?
+
+- *Lazy loading* is a design pattern about deferring the _initialization_ (loading/fetching/allocation) of a _resource_ (code/data/asset) until the point at which it is needed.
+- Its main goal is to improve _efficiency_ (reducing performance/memory consumption/processing power) when a significant amount of resources is not needed during the start.
+- It's an [EAA pattern](http://martinfowler.com/eaaCatalog/lazyLoad.html) from Martin Fowler.
 
 ---
 
@@ -110,22 +120,23 @@ Jun 18th, 2016
   - what you see first when you open a page
   - part of the *Critical Rendering Path*
   - must be rendered during the page load time
+  - thus, it can't be lazy loaded
 - *Below the fold*
   - everything else, needs scrolling or user interaction
   - won't be displayed during the page load time
   - it doesn't need to be rendered with the page load
-- More significant on client-side JS.
+  - thus, it can be lazy loaded
 
 ----
 
 ## Do I need Lazy-loading?
 
 - Ask yourself these questions:
-  - Is there any chunk of code that only runs after some user interaction (as a button click)?
-  - Is there any chunk of code that only runs upon a certain condition (as an uncommon widget)?
-  - Is there any library that is needed only by such chunks of code?
-- If you answered yes, you CAN lazy load and potentially improve your page performance.
-- You just need to download enough JS for the content above the fold. Anything else, lazy load it!
+  - Is there any chunk of code/library that only runs below the fold (as a reviews panel)?
+  - Is there any chunk of code/library that only runs after some event (as a button click)?
+  - Is there any chunk of code/library that only runs upon a certain condition (as an uncommon widget)?
+- If you answered yes, you can profit from lazy load and potentially improve your page performance.
+- Just defer the downloading of those chunks of code/libraries until the trigger is executed.
 
 ---
 
@@ -134,9 +145,17 @@ Jun 18th, 2016
 - DON'T include all your scripts in the page at once.
 - DON'T import all your modules on the top of your file.
 - Carefully decide WHEN to import or require your modules and libraries:
+  - Below the fold (scroll listener)
   - Event callbacks (user interactions / network calls)
   - Conditionally (for uncommon scenarios)
   - After some time (chat overlays)
+- This talk is about JS but you can also lazy load images, fonts and CSS.
+
+---
+
+# Part II
+
+<img src="img/part-ii.jpg" />
 
 ---
 
@@ -151,7 +170,6 @@ define('dog', [], function() {
     this.name = name;
     this.breed = breed;
   };
-
   Dog.prototype.bark = function() {
     return this.name + ': ' + getBarkStyle(this.breed);
   };
@@ -238,7 +256,7 @@ document.getElementById('loadDogButton')
 });
 ```
 
-- [https://webpack.github.io/docs/code-splitting.html](https://webpack.github.io/docs/code-splitting.html)
+- Read more about [Code Splitting](https://webpack.github.io/docs/code-splitting.html)
 
 ---
 
@@ -270,7 +288,7 @@ export class Dog {
 
 - ES2015 doesn't actually have a module loader specification
 - A popular proposal has been retreated: [es6-module-loader](https://github.com/ModuleLoader/es6-module-loader)
-- Such proposal has a promises-based API which inspired *System.js*
+- Such proposal uses a promises-based API which inspired *System.js*
 - A new proposal is in the works by WhatWG for ES2016: [Loader](https://whatwg.github.io/loader/)
 
 ----
@@ -304,7 +322,32 @@ document.getElementById('loadDogButton')
 });
 ```
 
+----
+
+## JSPM
+
+- [JSPM](http://jspm.io) is a JS package manager for *System.js*.
+- Loads modules written in AMD, CommonJS and ES2015 directly from *npm* and *GitHub*.
+- Performs bundling.
+- Makes it super simple to bootstrap System.js apps.
+- Sample project: [github.com/tiagorg/lazy-load-es2015-systemjs](https://github.com/tiagorg/lazy-load-es2015-systemjs)
+
 ---
 
-# JSPM
+# Conclusion
 
+<img src="img/lazy-load-it.jpg" />
+
+---
+
+# Questions?
+
+<img src="img/questions.jpg" />
+
+---
+
+# Thanks!
+
+- Talk: [tiagorg.com/talk-lazy-loading-es2015-modules](http://tiagorg.com/talk-lazy-loading-es2015-modules)
+- Github: [tiagorg.com/talk-lazy-loading-es2015-modules](http://tiagorg.com/talk-lazy-loading-es2015-modules)
+- More talks at [tiagorg.com](http://tiagorg.com)

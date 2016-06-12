@@ -288,26 +288,40 @@ body {
 
 .slides section {
   min-height: 100%; }
-  .slides section img.logo {
-    max-height: 250px;
-    border: 0; }
+  .slides section img {
+    border: 0;
+    max-height: 450px; }
+    .slides section img.logo {
+      max-height: 250px; }
+    .slides section img.avatar {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      border: 2px solid black; }
+    .slides section img.icon {
+      max-height: 250px;
+      max-width: 250px;
+      background: none;
+      position: absolute;
+      right: 0;
+      box-shadow: none; }
+    .slides section img.ac-logo {
+      position: absolute;
+      max-height: none;
+      max-width: none;
+      width: 153px;
+      height: 109px;
+      z-index: 999;
+      right: 0;
+      bottom: 10px;
+      margin: 0px;
+      background: none;
+      box-shadow: none;
+      margin-bottom: 20px; }
   .slides section pre {
     min-width: 800px; }
-  .slides section img.avatar {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    border: 2px solid black; }
   .slides section ul.full {
     width: 100%; }
-  .slides section img.icon {
-    max-height: 250px;
-    max-width: 250px;
-    border: 0;
-    background: none;
-    position: absolute;
-    right: 0;
-    box-shadow: none; }
   .slides section em {
     color: #f90 !important;
     font-style: normal; }
@@ -326,20 +340,6 @@ body {
       text-align: left; }
     .slides section div.footer hr {
       margin: 5px 0; }
-  .slides section img.ac-logo {
-    position: absolute;
-    max-height: none;
-    max-width: none;
-    width: 153px;
-    height: 109px;
-    z-index: 999;
-    right: 0;
-    bottom: 10px;
-    margin: 0px;
-    background: none;
-    box-shadow: none;
-    border: 0;
-    margin-bottom: 20px; }
   .slides section .icon-success {
     color: #5cb85c; }
   .slides section .icon-warning {
