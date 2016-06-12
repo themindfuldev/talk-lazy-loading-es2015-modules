@@ -16,7 +16,7 @@ You should just edit the source file at src/README.md - the one which stars with
 
 ---
 
-# Tiago Garcia
+## Tiago Garcia
 
 <img src="http://www.gravatar.com/avatar/5cac784a074b86d771fe768274f6860c?s=250" class="avatar">
 
@@ -27,14 +27,19 @@ You should just edit the source file at src/README.md - the one which stars with
 
 ----
 
-# Avenue Code
+## Avenue Code
 
-- Founded in 2008
-- Offices in San Francisco, São Paulo and Belo Horizonte
-- Primary verticals: Retail & Financial services
-- Partners with MuleSoft, Adobe, Chef, Oracle and AWS
-- Project Management, Business Analysis, Development, QA, DevOps, Coaching
-- Careers at *[www.avenuecode.com/careers](https://www.avenuecode.com/carreers)*
+<p class="ac-column-logo">
+  <img src="img/ac-logo-big.png" class="ac-logo-big" />
+</p>
+
+<ul class="ac-column-text">
+  <li>Offices in San Francisco, São Paulo, Belo Horizonte</li>
+  <li>Primary verticals: Retail & Financial services</li>
+  <li>Partners with MuleSoft, Adobe, Chef, Oracle and AWS</li>
+  <li>Project Management, Business Analysis, Development, QA, DevOps, Coaching</li>
+  <li>*[www.avenuecode.com/careers](https://www.avenuecode.com/carreers)*</li>
+</ul>
 
 ---
 
@@ -109,7 +114,8 @@ You should just edit the source file at src/README.md - the one which stars with
 ## What is Lazy-loading?
 
 - *Lazy loading* is a design pattern about deferring the _initialization_ (loading/fetching/allocation) of a _resource_ (code/data/asset) until the point at which it is needed.
-- Its main goal is to improve _efficiency_ (reducing performance/memory consumption/processing power) when a significant amount of resources is not needed during the start.
+- Its main goal is to improve _efficiency_ when a significant amount of resources is not needed at first.
+- Lazy-loading is targeted to increase performance and save on memory consumption and processing power.
 - It's an [EAA pattern](http://martinfowler.com/eaaCatalog/lazyLoad.html) from Martin Fowler.
 
 ---
@@ -330,7 +336,7 @@ document.getElementById('loadDogButton')
 - Loads modules written in AMD, CommonJS and ES2015 directly from *npm* and *GitHub*.
 - Performs bundling.
 - Makes it super simple to bootstrap System.js apps.
-- Sample project: [github.com/tiagorg/lazy-load-es2015-systemjs](https://github.com/tiagorg/lazy-load-es2015-systemjs)
+- [github.com/tiagorg/lazy-load-es2015-systemjs](https://github.com/tiagorg/lazy-load-es2015-systemjs)
 
 ---
 

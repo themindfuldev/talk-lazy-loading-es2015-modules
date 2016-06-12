@@ -19,7 +19,7 @@
 $backgroundColor: #222;
 
 $mainColor: #fff;
-$headingColor: #ddd;
+$headingColor: #A2A4FC;
 
 $mainFontSize: 38px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
@@ -90,6 +90,22 @@ section.has-light-background {
         box-shadow: none;
         margin-bottom: 20px;
       }
+
+      &.ac-logo-big {
+        float: left;
+        background: none;
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+    .ac-column-logo {
+      float: left;
+    }
+
+    .ac-column-text {
+      float: right;
+      width: 55%;
     }
 
     pre {
@@ -101,7 +117,7 @@ section.has-light-background {
     }
 
     em {
-      color: #f90 !important;
+      color: #FFA837 !important;
       font-style: normal;
     }
 

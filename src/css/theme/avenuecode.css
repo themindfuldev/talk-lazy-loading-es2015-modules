@@ -40,7 +40,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #ddd;
+  color: #A2A4FC;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
@@ -318,12 +318,22 @@ body {
       background: none;
       box-shadow: none;
       margin-bottom: 20px; }
+    .slides section img.ac-logo-big {
+      float: left;
+      background: none;
+      border: none;
+      box-shadow: none; }
+  .slides section .ac-column-logo {
+    float: left; }
+  .slides section .ac-column-text {
+    float: right;
+    width: 55%; }
   .slides section pre {
     min-width: 800px; }
   .slides section ul.full {
     width: 100%; }
   .slides section em {
-    color: #f90 !important;
+    color: #FFA837 !important;
     font-style: normal; }
   .slides section div.footer {
     position: absolute;
