@@ -357,4 +357,7 @@ body {
   .slides section .icon-danger {
     color: #d9534f; }
 
+.reveal .slide-number {
+  display: none; }
+
 /*# sourceMappingURL=avenuecode.css.map */

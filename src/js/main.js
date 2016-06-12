@@ -6,6 +6,7 @@
 Reveal.initialize({
   center: false,
   history: true,
+  controls: false,
   transition: 'convex',
 
   // Optional libraries used to extend on reveal.js
@@ -21,13 +22,7 @@ Reveal.initialize({
     { src: 'js/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 
     // Zoom in and out with Alt+click
-    { src: 'js/plugin/zoom-js/zoom.min.js', async: true },
-
-    // Speaker notes
-    { src: 'js/plugin/notes/notes.js', async: true },
-
-    // Print PDF
-    { src: 'js/plugin/print-pdf/print-pdf.js', async: true }
+    { src: 'js/plugin/zoom-js/zoom.min.js', async: true }
   ]
 });
 

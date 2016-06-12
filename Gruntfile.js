@@ -24,7 +24,8 @@ module.exports = function(grunt) {
           console: false,
           unescape: false,
           require: true,
-          TEMPLATES: true
+          TEMPLATES: true,
+          define: true
         }
       },
       files: ['Gruntfile.js', 'src/js/**/*.js']
