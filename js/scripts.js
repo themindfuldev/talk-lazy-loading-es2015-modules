@@ -5977,7 +5977,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 Reveal.initialize({
   center: false,
   history: true,
-  controls: false,
+  controls: true,
   transition: 'convex',
 
   // Optional libraries used to extend on reveal.js
