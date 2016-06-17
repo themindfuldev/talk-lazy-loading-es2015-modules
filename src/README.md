@@ -355,5 +355,5 @@ document.getElementById('loadDogButton')
 # Thanks!
 
 - Talk: [tiagorg.com/talk-lazy-loading-es2015-modules](http://tiagorg.com/talk-lazy-loading-es2015-modules)
-- Github: [tiagorg.com/talk-lazy-loading-es2015-modules](http://tiagorg.com/talk-lazy-loading-es2015-modules)
+- Github: [github.com/tiagorg/talk-lazy-loading-es2015-modules](https://github.com/tiagorg/talk-lazy-loading-es2015-modules)
 - More talks at [tiagorg.com](http://tiagorg.com)
