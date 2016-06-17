@@ -141,8 +141,18 @@ You should just edit the source file at src/README.md - the one which stars with
   - Is there any chunk of code/library that only runs below the fold (as a reviews panel)?
   - Is there any chunk of code/library that only runs after some event (as a button click)?
   - Is there any chunk of code/library that only runs upon a certain condition (as an uncommon widget)?
-- If you answered yes, you can profit from lazy load and potentially improve your page performance.
+- If you answered yes, you may profit from lazy load and potentially improve your page performance.
 - Just defer the downloading of those chunks of code/libraries until the trigger is executed.
+
+----
+
+## Do I need Lazy-loading?
+
+- Lazy loading may not shine for certain scenarios:
+  - Common stuff that gets cached in the browser
+  - Web-based mobile apps (Web Views)
+  - UX requirements (loading screen)
+  - Network limitations (offline mode support)
 
 ---
 
