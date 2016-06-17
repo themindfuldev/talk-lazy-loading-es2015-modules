@@ -149,7 +149,7 @@ You should just edit the source file at src/README.md - the one which stars with
 ## Do I need Lazy-loading?
 
 - Lazy loading may not shine for certain scenarios:
-  - Common stuff that gets cached in the browser
+  - Common stuff that gets cached (CDN)
   - Web-based mobile apps (Web Views)
   - UX requirements (loading screen)
   - Network limitations (offline mode support)

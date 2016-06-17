@@ -141,8 +141,18 @@ Jun 18th, 2016
   - Is there any chunk of code/library that only runs below the fold (as a reviews panel)?
   - Is there any chunk of code/library that only runs after some event (as a button click)?
   - Is there any chunk of code/library that only runs upon a certain condition (as an uncommon widget)?
-- If you answered yes, you can profit from lazy load and potentially improve your page performance.
+- If you answered yes, you may profit from lazy load and potentially improve your page performance.
 - Just defer the downloading of those chunks of code/libraries until the trigger is executed.
+
+----
+
+## Do I need Lazy-loading?
+
+- Lazy loading may not shine for certain scenarios:
+  - Common stuff that gets cached (CDN)
+  - Web-based mobile apps (Web Views)
+  - UX requirements (loading screen)
+  - Network limitations (offline mode support)
 
 ---
 
@@ -354,6 +364,7 @@ document.getElementById('loadDogButton')
 
 # Thanks!
 
+- Special thanks to Gene, Aaron, all FFDC 2016 speakers and most importantly all the attendees!
 - Talk: [tiagorg.com/talk-lazy-loading-es2015-modules](http://tiagorg.com/talk-lazy-loading-es2015-modules)
-- Github: [tiagorg.com/talk-lazy-loading-es2015-modules](http://tiagorg.com/talk-lazy-loading-es2015-modules)
+- Github: [github.com/tiagorg/talk-lazy-loading-es2015-modules](https://github.com/tiagorg/talk-lazy-loading-es2015-modules)
 - More talks at [tiagorg.com](http://tiagorg.com)
