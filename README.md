@@ -10,9 +10,9 @@ You should just edit the source file at src/README.md - the one which stars with
 
 <img src="img/cover.jpg" class="logo" />
 
-Tiago Garcia @ [FEDC 2016](http://frontenddesignconference.com/)
+Tiago Garcia @ [DevCon5 2016](http://www.html5report.com/conference/newyork/)
 
-Jun 18th, 2016
+Aug 2nd, 2016
 
 ---
 
@@ -105,7 +105,7 @@ Jun 18th, 2016
       <li>*1.2 MB* total (vs *2 MB*) <i class="fa fa-check-circle icon-success" aria-hidden="true"></i></li>
       <li>80% just on home page: *1 MB* (vs *400 KB*) <i class="fa fa-times-circle icon-danger" aria-hidden="true"></i></li>
     </ul>
-  - However, if you apply Lazy-loading:
+  - However, if you use Lazy-loading:
     - *400 KB* on home page
     - *200 KB* each view after
 
@@ -148,11 +148,11 @@ Jun 18th, 2016
 
 ## Do I need Lazy-loading?
 
-- Lazy loading may not shine for certain scenarios:
-  - Common stuff that gets cached (CDN)
+- Lazy loading isn't recommended for certain scenarios:
+  - Supporting network limitations (offline mode)
   - Web-based mobile apps (Web Views)
-  - UX requirements (loading screen)
-  - Network limitations (offline mode support)
+  - Apps that can't be paused (games)
+  - Specific UX requirements (single loading screen)
 
 ---
 
@@ -311,9 +311,10 @@ export class Dog {
 
 ## System.js
 
-- [System.js](https://github.com/systemjs/systemjs) has asynchronous module loading using a Promises-based API
-- Promises can be chained and combined
-- *`Promises.all `* can load multiple modules in parallel
+- [System.js](https://github.com/systemjs/systemjs) is a module loader which supports AMD, CommonJS, ES2015 and global scripts.
+- Is performs asynchronous module loading using a Promises-based API.
+- Promises can be chained and combined.
+- *`Promises.all `* can load multiple modules in parallel.
 
 ----
 
