@@ -346,8 +346,22 @@ document.getElementById('loadDogButton')
 - [JSPM](http://jspm.io) is a JS package manager for *System.js*.
 - Loads modules written in AMD, CommonJS and ES2015 directly from *npm* and *GitHub*.
 - Performs bundling.
-- Makes it super simple to bootstrap System.js apps.
+- Upside: extremely simple setup.
+- Downside: resolves dependencies and perform transpilation in runtime.
+- Downside: initial bundle is very big as it includes JSPM runtime (2MB for this example).
 - [github.com/tiagorg/lazy-load-es2015-systemjs](https://github.com/tiagorg/lazy-load-es2015-systemjs)
+
+----
+
+## Webpack 2
+
+- [Webpack 2](https://github.com/webpack/webpack/tree/v2.1.0-beta.15) is still in beta but will have native *ES2015* and *System.js* support.
+- [What's new in webpack 2](https://gist.github.com/sokra/27b24881210b56bbaff7)
+- [Roadmap](https://webpack.github.io/docs/roadmap.html)
+- Upside: resolves dependencies and perform transpilation in build time.
+- Upside: initial bundle is way smaller (6 KB for this example).
+- Downside: requires more setup.
+- [github.com/tiagorg/lazy-load-es2015-webpack2](https://github.com/tiagorg/lazy-load-es2015-webpack2)
 
 ---
 
@@ -365,7 +379,7 @@ document.getElementById('loadDogButton')
 
 # Thanks!
 
-- Special thanks to Gene, Aaron, all FFDC 2016 speakers and most importantly all the attendees!
+- Special thanks to Avenue Code, DevCon5 crew, all the speakers and most importantly all the attendees!
 - Talk: [tiagorg.com/talk-lazy-loading-es2015-modules](http://tiagorg.com/talk-lazy-loading-es2015-modules)
 - Github: [github.com/tiagorg/talk-lazy-loading-es2015-modules](https://github.com/tiagorg/talk-lazy-loading-es2015-modules)
 - More talks at [tiagorg.com](http://tiagorg.com)
