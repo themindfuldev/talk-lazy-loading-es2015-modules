@@ -10,9 +10,9 @@ You should just edit the source file at src/README.md - the one which stars with
 
 <img src="img/cover.jpg" class="logo" />
 
-Tiago Garcia @ [DevCon5 2016](http://www.html5report.com/conference/newyork/)
+Tiago Garcia @ [Abstractions](http://abstractions.io)
 
-Aug 2nd, 2016
+Aug 18th, 2016
 
 ---
 
@@ -375,7 +375,7 @@ document.getElementById('loadDogButton')
 
 # Thanks!
 
-- Special thanks to Avenue Code, DevCon5 crew, all the speakers and most importantly all the attendees!
+- Special thanks to Avenue Code, Abstractions crew, all the speakers and most importantly all the attendees!
 - Talk: [tiagorg.com/talk-lazy-loading-es2015-modules](http://tiagorg.com/talk-lazy-loading-es2015-modules)
 - Github: [github.com/tiagorg/talk-lazy-loading-es2015-modules](https://github.com/tiagorg/talk-lazy-loading-es2015-modules)
 - More talks at [tiagorg.com](http://tiagorg.com)
