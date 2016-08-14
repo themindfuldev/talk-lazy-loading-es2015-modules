@@ -8,22 +8,27 @@ You should just edit the source file at src/README.md - the one which stars with
 
 ## @@title
 
-<img src="img/cover.jpg" class="logo" />
+<iframe src="//giphy.com/embed/3NtY188QaxDdC" width="360" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p>
 
-@@author @ [Abstractions](http://abstractions.io)
-
-@@date
+@@author @ [Abstractions](http://abstractions.io) - @@date
 
 ---
 
 ## Tiago Garcia
 
-<img src="http://www.gravatar.com/avatar/5cac784a074b86d771fe768274f6860c?s=250" class="avatar">
+<p class="ac-column-logo">
+  <img src="http://www.gravatar.com/avatar/5cac784a074b86d771fe768274f6860c?s=380" class="avatar ac-logo-big">
+</p>
 
-- Tech Manager at [Avenue Code](http://www.avenuecode.com)
-- Tech Lead at [Macys.com](http://www.macys.com)
-- *[@@email](mailto:@@email)*
-- *[tiagorg.com](http://tiagorg.com)*
+<ul class="ac-column-text">
+  <br/>
+  <li>The 1st Brazilian that became vegetarian after moving to US</li>
+  <li>Tech Manager at [Avenue Code](http://www.avenuecode.com)</li>
+  <li>Tech Lead at [Macys.com](http://www.macys.com)</li>
+  <li>*[@@email](mailto:@@email)*</li>
+  <li>Twitter: [@tiagooo_romero](https://twitter.com/tiagooo_romero)</li>
+  <li>Site: *[tiagorg.com](http://tiagorg.com)*</li>
+</ul>
 
 ----
 
@@ -379,3 +384,4 @@ document.getElementById('loadDogButton')
 - Talk: [tiagorg.com/talk-lazy-loading-es2015-modules](http://tiagorg.com/talk-lazy-loading-es2015-modules)
 - Github: [github.com/tiagorg/talk-lazy-loading-es2015-modules](https://github.com/tiagorg/talk-lazy-loading-es2015-modules)
 - More talks at [tiagorg.com](http://tiagorg.com)
+- Follow me at [@tiagooo_romero](https://twitter.com/tiagooo_romero)
