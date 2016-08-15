@@ -8,7 +8,7 @@ You should just edit the source file at src/README.md - the one which stars with
 
 ## @@title
 
-<iframe src="//giphy.com/embed/3NtY188QaxDdC" width="360" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></p>
+<img src="img/sloth-zootopia.gif" class="logo"></p>
 
 @@author @ [Abstractions](http://abstractions.io) - @@date
 
@@ -17,17 +17,16 @@ You should just edit the source file at src/README.md - the one which stars with
 ## Tiago Garcia
 
 <p class="ac-column-logo">
-  <img src="http://www.gravatar.com/avatar/5cac784a074b86d771fe768274f6860c?s=380" class="avatar ac-logo-big">
+  <img src="img/avatar.jpg" class="avatar ac-logo-big">
 </p>
 
 <ul class="ac-column-text">
-  <br/>
-  <li>The 1st Brazilian that became vegetarian after moving to US</li>
+  <li>JavaScript P.I., dog daddy, vegetarian rollerblader,<br/>not your typical Brazilian.</li>
   <li>Tech Manager at [Avenue Code](http://www.avenuecode.com)</li>
   <li>Tech Lead at [Macys.com](http://www.macys.com)</li>
-  <li>*[@@email](mailto:@@email)*</li>
   <li>Twitter: [@tiagooo_romero](https://twitter.com/tiagooo_romero)</li>
   <li>Site: *[tiagorg.com](http://tiagorg.com)*</li>
+  <li>*[@@email](mailto:@@email)*</li>
 </ul>
 
 ----
@@ -40,7 +39,7 @@ You should just edit the source file at src/README.md - the one which stars with
 
 <ul class="ac-column-text">
   <li>Offices in San Francisco, São Paulo, Belo Horizonte</li>
-  <li>Primary verticals: Retail & Financial services</li>
+  <li>Primary verticals: <br/>Retail & Financial services</li>
   <li>Partners with MuleSoft, Adobe, Chef, Oracle and AWS</li>
   <li>Project Management, Business Analysis, Development, QA, DevOps, Coaching</li>
   <li>*[www.avenuecode.com/careers](https://www.avenuecode.com/carreers)*</li>

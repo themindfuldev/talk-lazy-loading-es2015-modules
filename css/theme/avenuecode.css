@@ -292,12 +292,17 @@ body {
     border: 0;
     max-height: 450px; }
     .slides section img.logo {
-      max-height: 250px; }
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      border: 2px solid black;
+      height: 320px; }
     .slides section img.avatar {
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px;
-      border: 2px solid black; }
+      border: 2px solid black;
+      width: 380px; }
     .slides section img.icon {
       max-height: 250px;
       max-width: 250px;

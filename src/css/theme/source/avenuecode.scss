@@ -57,7 +57,11 @@ section.has-light-background {
       max-height: 450px;
 
       &.logo {
-        max-height: 250px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        border: 2px solid black;
+        height: 320px;
       }
 
       &.avatar {
@@ -65,6 +69,7 @@ section.has-light-background {
         -moz-border-radius: 10px;
         border-radius: 10px;
         border: 2px solid black;
+        width: 380px;
       }
 
       &.icon {
