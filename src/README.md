@@ -356,12 +356,22 @@ document.getElementById('loadDogButton')
 
 ## Webpack 2
 
-- [Webpack 2](https://github.com/webpack/webpack/tree/v2.1.0-beta.15) is still in beta but now offers native *ES2015* and *System.js* support.
+- [Webpack 2](https://webpack.js.org/) is still in beta but now offers native *ES2015* and *System.js* support.
 - Loads modules written in AMD, CommonJS and ES2015.
 - Performs bundling and tree-shaking.
 - [What's new in webpack 2](https://gist.github.com/sokra/27b24881210b56bbaff7)
 - [Roadmap](https://webpack.github.io/docs/roadmap.html)
 - [github.com/tiagorg/lazy-load-es2015-webpack2](https://github.com/tiagorg/lazy-load-es2015-webpack2)
+
+---
+
+## Challenge
+
+- Fork from [github.com/tiagorg/lazy-load-es2015-webpack2-challenge](https://github.com/tiagorg/lazy-load-es2015-webpack2-challenge)
+- Take a moment to understand this implementation.
+- Completely lazy-load *`Animations`* and its dependencies upon click of the "Merry Xmas" button.
+- Completely lazy-load *`Messaging`* after 5s the page has been loaded.
+- Verify your lazy-loadable bundles have been generated and are loading properly.
 
 ---
 
