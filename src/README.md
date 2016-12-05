@@ -10,7 +10,7 @@ You should just edit the source file at src/README.md - the one which stars with
 
 <img src="img/sloth-zootopia.gif" class="logo"></p>
 
-@@author @ [Abstractions](http://abstractions.io) - @@date
+@@author @ [Women Who Code](https://www.meetup.com/Women-Who-Code-SF/events/233503274/) - @@date
 
 ---
 
@@ -42,7 +42,7 @@ You should just edit the source file at src/README.md - the one which stars with
   <li>Primary verticals: <br/>Retail & Financial services</li>
   <li>Partners with MuleSoft, Adobe, Chef, Oracle and AWS</li>
   <li>Project Management, Business Analysis, Development, QA, DevOps, Coaching</li>
-  <li>*[www.avenuecode.com/careers](https://www.avenuecode.com/carreers)*</li>
+  <li>*[www.avenuecode.com/careers](https://www.avenuecode.com/careers)*</li>
 </ul>
 
 ---
@@ -255,7 +255,7 @@ module.exports = Dog;
 
 ## Lazy-loading in CommonJS
 
-- Using [Webpack](https://webpack.github.io)'s *`require.ensure`*
+- Using [Webpack](https://webpack.js.org)'s *`require.ensure`*
 
 ```
 // main.js
@@ -276,7 +276,7 @@ document.getElementById('loadDogButton')
 });
 ```
 
-- Read more about [Code Splitting](https://webpack.github.io/docs/code-splitting.html)
+- Read more about [Code Splitting](https://webpack.js.org/guides/code-splitting)
 
 ---
 
